@@ -123,20 +123,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
 
-const quoteForm = document.getElementById('quoteForm');
-quoteForm?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(quoteForm);
-  const subject = `JRM Quote Request - ${data.get('service') || 'Website Inquiry'}`;
-  const body = [
-    `Name: ${data.get('name') || ''}`,
-    `Phone: ${data.get('phone') || ''}`,
-    `Email: ${data.get('email') || ''}`,
-    `Service Needed: ${data.get('service') || ''}`,
-    '',
-    'Project Details:',
-    `${data.get('message') || ''}`
-  ].join('\n');
+
 
   window.location.href = `mailto:ethanmar21@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
