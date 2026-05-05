@@ -125,5 +125,5 @@ document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
 
 
 
-  window.location.href = `mailto:ethanmar21@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
 });
