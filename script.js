@@ -1,4 +1,3 @@
-
 const header = document.querySelector('.site-header');
 const menuToggle = document.getElementById('menuToggle');
 const mobilePanel = document.getElementById('mobilePanel');
